@@ -1,0 +1,436 @@
+* {
+    color: var(--wedding-brown);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'La Belle Aurore', cursive;*/
+}
+:root{
+    --wedding-purple: #F4F0F6;
+    --wedding-brown: #856E4C;
+    --wedding-brown-opacity: #856E4C60; 
+    --wedding-green: #E8ECDB;
+    
+}
+
+/* CSS HEX 
+--shadow: #8B8670ff;
+--alabaster: #E7EBE5ff;
+--white: #FFFFFFff;
+--ebony: #6E6C5Aff;
+--alabaster-2: #E2E7DFff;
+--artichoke: #8D8D7Cff;
+
+*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFFff;
+}
+
+li {
+    list-style: none;
+}
+
+/*-------- NAV BAR---------------*/
+
+.navbar-container{
+    background-color: var(--wedding-purple);
+
+}
+
+ul.topnav{
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+ul.topnav li a{
+    display: flex;
+    color: var(--wedding-brown);
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: var(--wedding-brown-opacity);
+    color: var(--wedding-purple);
+    border-radius: 40%;
+}
+
+/*------ GENERAL STYLE FOR MAIN ------*/
+
+main{
+    max-width: 1024px;
+    margin: auto;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+
+/*------- HEADER / COUNTDOWN --------*/
+.header{
+    display: flex;
+    height: 75%;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--wedding-green);
+    
+}
+
+.header h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.countdown-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-family: 'La Belle Aurore';
+    
+}
+
+.countdown-container div{
+    width: 25%;
+    text-align: center;
+    font-size: 40px;
+}
+
+.countdown-timer-values{
+    font-size: 60px;
+}
+
+/*--------- WEDDING INFO --------------*/
+.wedding-info-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #F4F0F640;
+    padding: 0 10% 0 10%;
+}
+.wedding-info h1{
+    font-family: 'La Belle Aurore';
+}
+.wedding-info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+}
+.wedding-info p{
+    margin: 0 50px 0 50px;
+}
+
+.wedding-info-image{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+
+}
+
+.wedding-info-image img{
+    border-radius: 10%;
+}
+/*------- WEDDING DETAILS -----------*/
+.details-title-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--wedding-green);
+    font-family: 'la Belle Aurore';
+    font-size:large;
+}
+
+.details-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #F4F0F640;
+}
+
+.details-image-container{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    height: 50%;
+    width: 50%;
+}
+
+.details-text-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.location-title{
+    font-family: 'la Belle Aurore';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    background-color: var(--wedding-purple);
+}
+.details-location{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30% 10% 0% 10%;
+
+}
+
+.directions-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+.get-directions-button{
+    text-decoration: none;
+    border-radius: 10px;
+    background-color: var(--wedding-green);
+    font-size: 1rem;
+    padding: 15px 25px;
+}
+
+.get-directions-button:hover{
+    background-color: var(--wedding-brown-opacity);
+    color: var(--wedding-purple);
+}
+
+/*-------DRESS CODE AND SPEECHES SECTION----*/
+.details2-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20rem;
+}
+
+.Dresscode-container{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    background-color: #E8ECDB40;
+}
+
+.Speeches-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #F4F0F640;
+}
+.accomodation-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #E8ECDB40;
+}
+
+.dresscode-title{
+    font-family: 'la Belle Aurore';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: var(--wedding-green);
+}
+
+.speeches-title{
+    font-family: 'la Belle Aurore';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: var(--wedding-purple);
+}
+
+.accomodation-title{
+    font-family: 'la Belle Aurore';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    background-color: var(--wedding-green);
+}
+
+.accomodation-text{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 5% 0 5%;
+}
+
+.speeches-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 5% 0 5%;
+}
+.dresscode-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 5% 0 5%;
+
+}
+.dresscode-text h1{
+    font-family: 'la Belle Aurore';
+}
+.emails{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.emails a{
+    text-decoration: none;
+}
+.emails a:hover{
+    color: var(--wedding-brown-opacity)
+}
+
+/*---------WEDDING GIFTS SECTION*/
+.wedding-gift-title-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--wedding-purple);
+    font-family: 'la Belle Aurore';
+    font-size:large;
+}
+
+.wedding-gift-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F0F640;
+}
+.wedding-gift-text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+    margin: 0 5% 0 5%;
+}
+.wedding-gift-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.wedding-gift-image img{
+    border-radius: 10%;
+    height: 75%;
+    width: auto;
+}
+
+/*------- RSVP HOMEPAGE SECTION------*/
+.rsvp-title-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    background-color: var(--wedding-green);
+    font-family: 'la Belle Aurore';
+    font-size:large;
+}
+
+.rsvp-container{
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8ECDB40;
+
+}
+
+.rsvp-text{
+    height: 75%;
+    width: 50%;
+    border: solid var(--wedding-brown);
+    background-color: var(--wedding-purple);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+/*------- FOOTER SECTION------*/
+
+.footer{
+    
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--wedding-purple);
+    display: flex;
+    align-items: center;
+}
+
+.col-container{
+    width: 100%;
+    max-width: 1024px;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.col-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.col-1 a{
+    text-decoration: none;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.col-2-map{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+
+
+
+
+
