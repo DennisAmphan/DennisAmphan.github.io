@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Author" content="Dennis, Matilda">
     <title>WEDDING OF THE CENTURY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,18 +13,35 @@
 <body>
 
    
-    <div class="navbar-container" id="navbar">
-        <ul class="topnav">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#details">Details</a></li>
-            <li><a class="active"  href="#top">KP Logo</a></li>
-            <li><a href="#rsvp">RSVP</a></li>
-            <li><a href="#wedding-gifts">Gifts</a></li>
-
-        </ul>   
+    <!--<div class="navbar-container" id="navbar">
+        <div class="menu" id="myTopnav">
+            <ul class="topnav">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a class="active"  href="#top" id="KPlogo">KP Logo</a></li>
+                <li><a href="#rsvp">RSVP</a></li>
+                <li><a href="#wedding-gifts">Gifts</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            </ul>   
+        </div>-->
+        <div class="topnav-container">
+            <div class="topnav" id="myTopnav">
+                <a href="#top" class="hidden-logo">
+                    <img src="images/logokp.png" alt="KPlogo">
+                </a>
+                <a href="#top">Home</a>
+                <a href="#details">Details</a>
+                <a href="#top" class="logo">
+                    <img src="images/logokp.png" alt="KPlogo">
+                </a>
+                <a href="#rsvp">RSVP</a>
+                <a href="#wedding-gifts">Gifts</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
+            </div>
     </div> 
-
-
 
 <main>
     <div class="header">
