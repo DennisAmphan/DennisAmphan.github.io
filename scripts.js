@@ -25,7 +25,7 @@ function checkPswd(){
   var correctPassword = "i solemnly swear i am up to no good";
   var password = document.getElementById("pswd");
   if(password == correctPassword){
-    window.location = "gifts.html";
+    window.location = "hemligOpen.html";
   }
   else{
     alert("hmmm.... maybe this is just an ordinary map..");

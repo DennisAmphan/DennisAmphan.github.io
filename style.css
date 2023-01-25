@@ -9,7 +9,8 @@
     --wedding-purple: #F4F0F6;
     --wedding-brown: #856E4C;
     --wedding-brown-opacity: #856E4C60; 
-    --wedding-green: #E8ECDB;
+    /*--wedding-green: #E8ECDB;*/
+    --wedding-green: #E7EADD;
     
 }
 
@@ -39,7 +40,8 @@ li {
 /*-------- NAV BAR---------------*/
 .topnav-container{
     background-color: var(--wedding-purple);
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -49,6 +51,7 @@ li {
     justify-content: space-between;
     margin: auto;
     align-items: center;
+    width: 100%;
 
 }
 
@@ -74,19 +77,33 @@ li {
     height: 100%;
     width: 100%;
   }
-  
-  .topnav .icon {
+
+  .toggle-button{
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
     display: none;
-  }
-  .topnav .hidden-logo{
-    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
   }
 
-/* Hide the link that should open when the topnav on small screens*/
-.topnav .icon{
+  .bar{
+    height: 3px;
+    width: 100%;
+    background-color: var(--wedding-brown);
+    border-radius: 10px;
+  }
+  .hidden-logo{
     display: none;
-}
+  }
+  .hidden-logo img{
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
 
+  }
 
 
 /*------ GENERAL STYLE FOR MAIN ------*/
@@ -101,13 +118,15 @@ main{
 
 /*------- HEADER / COUNTDOWN --------*/
 .header{
+    position: relative;
     display: flex;
     height: 75%;
     justify-content: center;
     flex-direction: column;
     background-color: var(--wedding-green);
+    background-image: url("Bakgrundsbilder/Matilda\ Johansson_s\ team\ library1024_2.jpg");
+    background-size: 100% 100%;
 }
-
 
 .header h1{
     display: flex;
@@ -131,6 +150,7 @@ main{
     width: 25%;
     text-align: center;
     font-size: 40px;
+    color: black;
 }
 
 .countdown-timer-values{
@@ -171,6 +191,7 @@ main{
 }
 /*------- WEDDING DETAILS -----------*/
 .details-title-container{
+    position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -179,6 +200,16 @@ main{
     background-color: var(--wedding-green);
     font-family: 'la Belle Aurore';
     font-size:large;
+}
+.details-title-container h1{
+    z-index: 3;
+}
+.details-title-container img{
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    opacity: 0.2;
+    z-index: 1;
 }
 
 .details-container{
@@ -203,6 +234,7 @@ main{
     flex: 1;
 }
 .location-title{
+    position: relative;
     font-family: 'la Belle Aurore';
     display: flex;
     justify-content: center;
@@ -210,6 +242,14 @@ main{
     width: 100%;
     height: 10%;
     background-color: var(--wedding-purple);
+}
+
+.location-title img{
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    opacity: 0.1;
+    z-index: 1;
 }
 .details-location{
     display: flex;
@@ -418,7 +458,7 @@ main{
 /*------- FOOTER SECTION------*/
 
 .footer{
-    
+    position: relative;
     width: 100%;
     justify-content: space-around;
     background-color: var(--wedding-purple);
@@ -455,48 +495,45 @@ main{
     flex-direction: column;
     margin: 2%;
     border: solid 3px var(--wedding-brown);
-    
+}
+.footsteps{
+    position: absolute;
+    width: 20%;
+    height: auto;
+    z-index: 10;
+    top: 0;
+    left: 2%;
+}
+.footsteps img{
+    opacity: 0.1;
 }
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-    .topnav {display: flex; max-width: 100%;}
-    .topnav a {display: none;}
-    .topnav a.icon {
+.footsteps img:hover{
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .toggle-button{display: flex;}
+    .topnav{display: none;}
+    .logo {display: none;}
+    .hidden-logo{display: flex; width: 100%;}
+
+}
+
+@media screen and (max-width: 600px){
+    .topnav-container{flex-direction: column;}
+    .topnav.responsive{
         display: flex;
-        justify-content: right;
-      }
-    .topnav a.hidden-logo{
-        display: flex; 
-        justify-content: right;
+        flex-direction: column;
+        width: 100%;
     }
-    .topnav a.logo {
-        display: none;
+    .topnav.responsive a{
+        width: 100%;
     }
 
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative; display: block;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 5%;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    .topnav.responsive a.hidden-logo img{
-        width: 32%;
-        
-    }
-    .topnav.responsive a.logo {
-        display: none;
-
-    }
-  }
+}
 
   @media screen and (max-width: 600px){
    /*Main*/

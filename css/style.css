@@ -1,0 +1,105 @@
+@charset "UFT-8";
+
+@import url('https://fonts.google.com/specimen/Niconne?query=nic');
+
+body{
+    background-color: #612B08;
+    color: #F8EDD4;
+    font-family: 'Niconne';
+    font-size: 1.3rem;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1024px;
+    margin: auto;
+    padding: 1rem;
+}
+
+.bild-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.login {
+    background-color: #F8EDD4;
+    color: #612B08;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: 0.2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 1rem #A36E14;
+    z-index: 40;
+    position: absolute;
+    /*left: 37rem;
+    top: 22rem;*/
+}
+
+input {
+    border-radius: 0.5rem;
+    font-family: "Niconne";
+    background-color: #612B08;
+    color: #F8EDD4;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0rem;
+    margin: 0rem;
+    line-height: 0.8rem;
+}
+
+.kartastangd {
+    border-radius: 2rem;
+    box-shadow:0px 0px 15px #A36E14;
+}
+
+.kartaoppen {
+    border-radius: 2rem;
+    box-shadow:0rem 0rem 1rem #A36E14; 
+}
+
+.welcome {
+    position: absolute;
+    /*left: 30rem;
+    top: 10rem;*/
+    width: 25rem;
+    height: 20rem;
+    background-color: #F8EDD4;
+    color: #612B08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    border-radius: 0.5rem;
+    box-shadow: 0rem 0rem 1rem #A36E14;
+    line-height: 1rem;
+}
+
+.welcome p {
+    text-align: center;
+    padding: 0;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    line-height: 1.2rem;
+    margin-top: 0rem;
+}
+
+@media screen and (max-width: 600px) {
+    .bild-container img {
+        width: 100%;
+        height: auto;
+    }
+
+}
