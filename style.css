@@ -11,6 +11,7 @@
     --wedding-brown-opacity: #856E4C60; 
     /*--wedding-green: #E8ECDB;*/
     --wedding-green: #E7EADD;
+    --wedding-dark-brown: #4B3B23;
     
 }
 
@@ -46,7 +47,7 @@ li {
 }
 
 .topnav{
-    max-width: 1024px;
+    max-width: 800px;
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -55,17 +56,23 @@ li {
 
 }
 
+.topnav .logo{
+    background-color: var(--wedding-purple);
+}
+
 .topnav a {
     color: var(--wedding-brown);
-    padding: 30px;
+    padding: 15px 30px 15px 30px;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
   }
+
   
   .topnav a:hover:not(.logo) {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--wedding-brown-opacity);
+    border-radius: 15%;
+    color: white;
   }
   
   .topnav a.active {
@@ -74,8 +81,8 @@ li {
   }
   .topnav img {
     border-radius: 50%;
-    height: 100%;
-    width: 100%;
+    height: 130px;
+    width: 130px;
   }
 
   .toggle-button{
@@ -150,11 +157,14 @@ main{
     width: 25%;
     text-align: center;
     font-size: 40px;
-    color: black;
+    color: var(--wedding-brown);
+    font-weight: bolder;
+    
 }
 
 .countdown-timer-values{
     font-size: 60px;
+    font-weight: bolder;
 }
 
 /*--------- WEDDING INFO --------------*/
@@ -204,13 +214,13 @@ main{
 .details-title-container h1{
     z-index: 3;
 }
-.details-title-container img{
+/*.details-title-container img{
     background-repeat: no-repeat;
     width: 100%;
     position: absolute;
     opacity: 0.2;
     z-index: 1;
-}
+}*/
 
 .details-container{
     display: flex;
@@ -244,13 +254,13 @@ main{
     background-color: var(--wedding-purple);
 }
 
-.location-title img{
+/*.location-title img{
     background-repeat: no-repeat;
     width: 100%;
     position: absolute;
     opacity: 0.1;
     z-index: 1;
-}
+}*/
 .details-location{
     display: flex;
     flex-direction: column;
@@ -307,6 +317,7 @@ main{
 }
 
 .dresscode-title{
+    position: relative;
     font-family: 'la Belle Aurore';
     display: flex;
     justify-content: center;
@@ -317,7 +328,12 @@ main{
     background-color: var(--wedding-green);
 }
 
+.dresscode-title h1{
+    z-index: 3;
+}
+
 .speeches-title{
+    position: relative;
     font-family: 'la Belle Aurore';
     display: flex;
     justify-content: center;
@@ -328,7 +344,12 @@ main{
     background-color: var(--wedding-purple);
 }
 
+.speeches-title h1{
+    z-index: 3;
+}
+
 .accomodation-title{
+    position: relative;
     font-family: 'la Belle Aurore';
     display: flex;
     justify-content: center;
@@ -339,12 +360,16 @@ main{
     background-color: var(--wedding-green);
 }
 
+.accomodation-title h1{
+    z-index: 3;
+}
+
 .accomodation-text{
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10% 5% 0 5%;
+    margin: 10% 10% 0 10%;
 }
 
 .speeches-text{
@@ -352,7 +377,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 10% 5% 0 5%;
+    margin: 10% 10% 0 10%;
 }
 .dresscode-text{
     display: flex;
@@ -382,6 +407,7 @@ main{
 
 /*---------WEDDING GIFTS SECTION*/
 .wedding-gift-title-container{
+    position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -391,6 +417,16 @@ main{
     font-family: 'la Belle Aurore';
     font-size:large;
 }
+.wedding-gift-title-container h1{
+    z-index: 3;
+}
+
+/*.wedding-gift-title-container img{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.2;
+}*/
 
 .wedding-gift-container{
     display: flex;
@@ -419,6 +455,7 @@ main{
 
 /*------- RSVP HOMEPAGE SECTION------*/
 .rsvp-title-container{
+    position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -428,6 +465,16 @@ main{
     font-family: 'la Belle Aurore';
     font-size:large;
 }
+.rsvp-title-container h1{
+    z-index: 3;
+}
+
+/*.rsvp-title-container img{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.2;
+}*/
 
 .rsvp-container{
     width: 100%;
@@ -443,6 +490,7 @@ main{
     height: 75%;
     width: 50%;
     border: solid var(--wedding-brown);
+    border-radius: 10px;
     background-color: var(--wedding-purple);
 
     display: flex;
@@ -453,7 +501,21 @@ main{
 }
 
 
+/*--------- MISCELLANEOUS--------*/
+/*    ---- Title backgriund images ----- */
+.green-title-background{
+    position: absolute;
+    opacity: 0.2;
+    z-index: 1;
+    width: 100%;
+}
 
+.purple-title-background{
+    position: absolute;
+    opacity: 0.1;
+    z-index: 1;
+    width: 100%;
+}
 
 /*------- FOOTER SECTION------*/
 
@@ -496,7 +558,7 @@ main{
     margin: 2%;
     border: solid 3px var(--wedding-brown);
 }
-.footsteps{
+/*.footsteps{
     position: absolute;
     width: 20%;
     height: auto;
@@ -510,6 +572,29 @@ main{
 
 .footsteps img:hover{
     opacity: 1;
+}*/
+
+.footstep-container{
+    position: relative;
+    height: 50px;
+    background-color: var(--wedding-purple);
+    display: flex;
+
+}
+
+.footstep-container a{
+    width: 100%;
+}
+
+.footstep-container img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+}
+
+.footstep-container img:hover{
+    opacity: 1;
 }
 
 
@@ -518,7 +603,7 @@ main{
     .toggle-button{display: flex;}
     .topnav{display: none;}
     .logo {display: none;}
-    .hidden-logo{display: flex; width: 100%;}
+    .hidden-logo{display: flex; width: 100%; margin: 0 0 0 1rem;}
 
 }
 
@@ -531,6 +616,9 @@ main{
     }
     .topnav.responsive a{
         width: 100%;
+    }
+    .topnav.responsive a:hover{
+        border-radius: 0%;
     }
 
 }

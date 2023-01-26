@@ -22,14 +22,19 @@ let x = setInterval(function (){
 
 
 function checkPswd(){
-  var correctPassword = "i solemnly swear i am up to no good";
-  var password = document.getElementById("pswd");
+  var correctPassword = "isolemnlysweariamuptonogood";
+  var password = document.getElementById("pswd").value;
+ 
   if(password == correctPassword){
-    window.location = "hemligOpen.html";
+    window.location = 'hemligOpen.html';
+    return false;
   }
   else{
     alert("hmmm.... maybe this is just an ordinary map..");
   }
+
+  console.log(correctPassword);
+  console.log(password);
 }
 
 function myFunction() {

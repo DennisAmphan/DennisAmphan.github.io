@@ -17,7 +17,7 @@
         <div class="bild-container">
             <img class="kartastangd" src="images/karta.jpg" width="620" height="820" alt="karta gammalt papper">
             <div class="login">
-                <form class="form1" action="/hemligOpen.html">
+                <form class="form1" onsubmit="return checkPswd()" >
                     <label for="password">What's the magic password?</label><br />
                     <input type="password" id="pswd" name="password"><br />
                     <input type="submit" class="button" value="Enter">
