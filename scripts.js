@@ -25,7 +25,7 @@ function checkPswd(){
   var correctPassword = "isolemnlysweariamuptonogood";
   var password = document.getElementById("pswd").value;
  
-  if(password == correctPassword){
+  if(password.toLowerCase() == correctPassword){
     window.location = 'hemligOpen.html';
     return false;
   }
@@ -37,6 +37,15 @@ function checkPswd(){
   console.log(password);
 }
 
+function viewPassword(){
+  var x = document.getElementById("pswd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -45,3 +54,11 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+/*----- Make so hamburger menu does not go to top of page ------*/
+const togglebutton = document.getElementById("toggle-button");
+const navlist = document.getElementById("myTopnav");
+
+togglebutton.addEventListener("click", (evt)=>{
+  evt.preventDefault();
+})

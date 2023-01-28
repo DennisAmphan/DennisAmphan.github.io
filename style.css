@@ -38,6 +38,23 @@ li {
     list-style: none;
 }
 
+/*----- LANGUAGE CONTAINER------*/
+.language-container{
+    background-color: var(--wedding-purple);
+    display: flex;
+    justify-content: flex-end;
+}
+.language-container a{
+    text-decoration: none;
+    margin: 0.2rem 0.4rem 0.2rem 0;
+}
+.language-container p{
+    margin: 0.2rem 0.4rem 0.2rem 0;
+}
+.language-container a:hover{
+    color: black;
+}
+
 /*-------- NAV BAR---------------*/
 .topnav-container{
     position: sticky;
@@ -47,8 +64,6 @@ li {
     background-color: var(--wedding-purple);
     display: flex;
     justify-content: center;
-    
-
 }
 
 .topnav{
@@ -183,6 +198,7 @@ main{
 }
 .wedding-info h1{
     font-family: 'La Belle Aurore';
+    padding-top: 1rem;
 }
 .wedding-info{
     display: flex;
@@ -271,9 +287,13 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30% 10% 0% 10%;
-
+    margin: 20% 10% 10% 10%;
 }
+
+.details-location h2{
+    padding-bottom: 1rem;
+}
+
 
 .directions-button-container{
     display: flex;
@@ -444,7 +464,7 @@ main{
     justify-content: center;
     flex-direction: column;
     flex:1;
-    margin: 0 5% 0 5%;
+    margin: 0 10% 0 10%;
 }
 .wedding-gift-image{
     display: flex;
@@ -454,8 +474,8 @@ main{
 }
 .wedding-gift-image img{
     border-radius: 10%;
-    height: 75%;
     border: solid var(--wedding-brown);
+    height: 50%;
     width: auto;
 }
 
@@ -504,6 +524,7 @@ main{
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 1rem;
 }
 
 
@@ -652,7 +673,7 @@ main{
     /*Details 1*/
     .details-container {display: block;}
     .details-image-container {width: 100%; height: 75%; margin-bottom: 2rem;}
-    .details-location {margin: auto; padding: 2rem 0 2rem 0;}
+    .details-location {margin: auto; padding: 2rem 1rem 2rem 1rem;}
 
     /*Details 2*/
     .details2-container{display: block;}
