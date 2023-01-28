@@ -40,9 +40,14 @@ li {
 
 /*-------- NAV BAR---------------*/
 .topnav-container{
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    max-height: 120px;
     background-color: var(--wedding-purple);
     display: flex;
     justify-content: center;
+    
 
 }
 
@@ -58,6 +63,7 @@ li {
 
 .topnav .logo{
     background-color: var(--wedding-purple);
+    border-radius: 50%;
 }
 
 .topnav a {
@@ -119,7 +125,7 @@ main{
     max-width: 1024px;
     margin: auto;
     background-color: #fff;
-    padding: 1rem;
+    padding: 0;
 }
 
 
@@ -139,7 +145,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 50px 0 0 0 ;
 }
 
 .countdown-container{
@@ -186,7 +192,7 @@ main{
 
 }
 .wedding-info p{
-    margin: 2rem;
+    margin: 0.5rem 1rem 1rem 1rem;
 }
 
 .wedding-info-image{
@@ -600,22 +606,28 @@ main{
 
 
 @media screen and (max-width: 600px){
+    .topnav-container{overflow: hidden;}
     .toggle-button{display: flex;}
     .topnav{display: none;}
     .logo {display: none;}
     .hidden-logo{display: flex; width: 100%; margin: 0 0 0 1rem;}
 
+
 }
 
 @media screen and (max-width: 600px){
-    .topnav-container{flex-direction: column;}
+    .topnav-container{flex-direction: column; max-height: 400px;}
     .topnav.responsive{
         display: flex;
         flex-direction: column;
         width: 100%;
+        
     }
     .topnav.responsive a{
         width: 100%;
+        text-align: end;
+        padding-right: 1rem;
+        
     }
     .topnav.responsive a:hover{
         border-radius: 0%;
@@ -630,7 +642,9 @@ main{
         margin: 0;
     }
     /*Countdown container*/
-    .countdown-container div {font-size: 2em;}
+
+    .header h1{font-size: 25px;}
+    .countdown-container div {font-size: 1.5em;}
     .countdown-container .countdown-timer-values {font-size: 40px;}
 
     /*Wedding info*/
