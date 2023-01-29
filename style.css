@@ -194,7 +194,6 @@ main{
     justify-content: space-around;
     text-align: center;
     background-color: #F4F0F640;
-    padding: 0 10% 0 10%;
 }
 .wedding-info h1{
     font-family: 'La Belle Aurore';
@@ -205,6 +204,7 @@ main{
     justify-content: center;
     text-align: center;
     flex-direction: column;
+    flex: 1;
 
 }
 .wedding-info p{
@@ -215,11 +215,14 @@ main{
     display: flex;
     justify-content: center;
     padding: 30px;
+    flex: 1;
 
 }
 
 .wedding-info-image img{
     border-radius: 10%;
+    width: 100%;
+    height: auto;
 }
 /*------- WEDDING DETAILS -----------*/
 .details-title-container{

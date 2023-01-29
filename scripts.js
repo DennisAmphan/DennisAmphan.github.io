@@ -22,7 +22,7 @@ let x = setInterval(function (){
 
 
 function checkPswd(){
-  var correctPassword = "isolemnlysweariamuptonogood";
+  var correctPassword = "isolemnlyswearthatiamuptonogood";
   var password = document.getElementById("pswd").value;
  
   if(password.toLowerCase() == correctPassword){
