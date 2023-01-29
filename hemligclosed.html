@@ -22,7 +22,11 @@
             <div class="login">
                 <form class="form1" onsubmit="return checkPswd()" >
                     <label for="password">What's the magic password?</label><br />
-                    <input type="password" id="pswd" name="password"><br/>
+
+                    <div class="tooltip">
+                        <input type="password" id="pswd" name="password"><br/>
+                        <span class="tooltiptext">Don't use space</span>
+                      </div>
                     <span><input type="checkbox" onclick="viewPassword()"> Show Password</span>
                     <input type="submit" class="button" value="Enter">
                 </form>
