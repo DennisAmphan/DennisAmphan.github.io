@@ -92,7 +92,7 @@ li {
   
   .topnav a:hover:not(.logo) {
     background-color: var(--wedding-brown-opacity);
-    border-radius: 15%;
+    border-radius: 20px;
     color: white;
   }
   
@@ -420,6 +420,11 @@ main{
 .dresscode-text h1{
     font-family: 'la Belle Aurore';
 }
+
+.dresscode-text a:hover{
+    color: var(--wedding-purple);
+}
+
 .emails{
     width: 100%;
     display: flex;
